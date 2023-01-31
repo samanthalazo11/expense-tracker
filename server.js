@@ -25,9 +25,29 @@ db.on('error', (error)=>{
 });
 
 // mount middleware
-
+app.use(express.urlencoded({extended:false}));
 
 // mount routes
+
+// SEED ROUTES
+
+//INDUCES
+//INDEX
+
+//NEW
+
+//Delete
+
+//Update
+
+//Create
+app.post('/expenses', (req,res) => {
+    res.send(req.body);
+})
+
+//EDIT
+
+//Show
 
 // tell the application to listen
 app.listen(PORT, () => {
