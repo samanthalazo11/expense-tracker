@@ -7,6 +7,10 @@
     <title>New Savings</title>
 </head>
 <body>
+    <nav>
+        <%-include('./partials/nav')%>
+    </nav>
+
     <h1>More Savings</h1>
     <form action="/savings" method="post">
 
@@ -14,7 +18,8 @@
 </br>
     Savings: <input type="text" name="savings">
 </br>
-
+    Notes: <input type="text" name="notes">
+</br>
     <input type="submit" value="Adds Savings">
     </form>
 </body>

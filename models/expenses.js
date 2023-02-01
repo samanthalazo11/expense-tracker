@@ -6,6 +6,7 @@ const expenseSchema = new Schema({
     name: String,
     budget: String,
     spent: String,
+    notes:String,
 
 
 });

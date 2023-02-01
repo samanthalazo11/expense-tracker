@@ -7,12 +7,15 @@
     <title>Expense Details</title>
 </head>
 <body>
+
     <nav>
+        <%-include('./partials/nav')%>
         <a href="/expenses">Back to All Expenses</a>
     </nav>
     <h1> <%=expense.name%> </h1>
     <p>Budget: <%=expense.budget%></p>
     <p>Spent: <%=expense.spent%></p>
+    <p>Notes: <%=expense.notes%></p>
     <form action="/expenses/<%=expense._id%>?_method=DELETE" method="POST">
         <input type="submit" value="DELETE">
     </form>

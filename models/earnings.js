@@ -5,6 +5,7 @@ const earningsSchema = new Schema({
 
     month: String,
     earnings: String,
+    notes: String,
 
 
 

@@ -7,11 +7,14 @@
     <title>Earnings</title>
 </head>
 <body>
+
     <nav>
+        <%-include('./partials/nav')%>
         <a href="/earnings">Back to All Earnings</a>
     </nav>
     <h1> <%=earning.month%> </h1>
-    <p><%=earning.earnings%></p>
+    <p>Amount: <%=earning.earnings%></p>
+    <p>Notes: <%=earning.notes%></p>
     <form action="/earnings/<%=earning._id%>?_method=DELETE" method="POST">
         <input type="submit" value="DELETE">
     </form>

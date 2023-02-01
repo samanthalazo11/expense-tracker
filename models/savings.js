@@ -5,6 +5,7 @@ const savingsSchema = new Schema({
 
     month: String,
     savings: String,
+    notes: String,
 
 
 

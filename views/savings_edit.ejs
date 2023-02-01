@@ -7,10 +7,15 @@
     <title>Edit Savings</title>
 </head>
 <body>
+    <nav>
+        <%-include('./partials/nav')%>
+    </nav>
+
     <h1>Edit Savings</h1>
     <form action="/savings/<%=saving._id%>?_method=PUT" method="POST">
         Month: <input type="text" name="month" value="<%=saving.month%>">
         Savings: <input type="text" name="savings" value="<%=saving.savings%>">
+        Notes: <input type="text" name="notes" value="<%=saving.notes%>">
         <input type="submit" value="Update Savings">
     </form>
 

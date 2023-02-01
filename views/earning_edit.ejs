@@ -7,10 +7,12 @@
     <title>Edit Earning</title>
 </head>
 <body>
+    <%-include('./partials/nav')%>
     <h1>Edit Earnings</h1>
     <form action="/earnings/<%=earning._id%>?_method=PUT" method="POST">
         Month: <input type="text" name="month" value="<%=earning.month%>">
         Earnings: <input type="text" name="earnings" value="<%=earning.earnings%>">
+        Notes: <input type="text" name="notes" value="<%=earning.notes%>">
         <input type="submit" value="Update Earnings">
     </form>
 

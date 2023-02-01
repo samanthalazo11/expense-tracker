@@ -7,13 +7,16 @@
     <title>Earnings</title>
 </head>
 <body>
+
     <nav>
+        <%-include('./partials/nav')%>
         <a href="/earnings/new">Next Month</a>
     </nav>
     <h1>Monthly Earnings </h1>
-
+    <% let total=0 %>
     <ul>
         <% earning.forEach(earning => { %>
+            <% total+=parseInt(earning.earnings)%>
             <li>
                 <a href="/earnings/<%=earning._id%>">
                     <%=earning.month%>
@@ -22,6 +25,7 @@
 
        <% }) %>
     </ul>
+    <p>Total: <%=total%> </p>
     <nav>
         <a href="/planner">Back to Planner</a>
     </nav>
