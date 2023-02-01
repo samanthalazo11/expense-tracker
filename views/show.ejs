@@ -13,6 +13,10 @@
     <h1> <%=expense.name%> </h1>
     <p>Budget: <%=expense.budget%></p>
     <p>Spent: <%=expense.spent%></p>
+    <form action="/expenses/<%=expense._id%>?_method=DELETE" method="POST">
+        <input type="submit" value="DELETE">
+    </form>
+    <a href="/expenses/<%=expense._id%>/edit">Edit</a>
 
 </body>
 </html>

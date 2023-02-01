@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const Expense = require('./models/expenses');
 const Earnings = require('./models/earnings');
 const Savings = require('./models/savings');
+const methodOverride = require('method-override');
 
 // Initialize application
 const app = express();
@@ -30,6 +31,7 @@ db.on('error', (error)=>{
 
 // mount middleware
 app.use(express.urlencoded({extended:false}));
+app.use(methodOverride('_method'));
 
 // mount routes
 
@@ -85,8 +87,48 @@ app.get('/earnings/new', (req,res)=>{
 });
 
 //Delete
+//Expenses
+app.delete('/expenses/:id', (req,res)=>{
+    Expense.findByIdAndDelete(req.params.id, (err,deletedExpense)=>{
+        res.redirect('/expenses');
+    });
+});
+
+//Savings
+app.delete('/savings/:id', (req,res)=>{
+    Savings.findByIdAndDelete(req.params.id, (err,deletedSavings)=>{
+        res.redirect('/savings')
+    })
+})
+
+//Earnings
+app.delete('/earnings/:id', (req,res)=>{
+    Earnings.findByIdAndDelete(req.params.id, (err,deletedEarnings)=>{
+        res.redirect('/earnings')
+    });
+});
+
 
 //Update
+//Expenses
+app.put('/expenses/:id', (req,res)=>{
+    Expense.findByIdAndUpdate(req.params.id, req.body, (err,expense)=>{
+        res.redirect('/expenses');
+    });
+});
+//Savings
+app.put('/savings/:id',(req,res)=>{
+    Savings.findByIdAndUpdate(req.params.id, req.body, (err,saving)=>{
+        res.redirect('/savings');
+    });
+});
+
+//Earnings
+app.put('/earnings/:id', (req,res)=>{
+    Earnings.findByIdAndUpdate(req.params.id, req.body, (err,earning)=>{
+        res.redirect('/earnings');
+    });
+});
 
 //Create
 //Expenses
@@ -113,6 +155,31 @@ app.post('/earnings', (req,res) =>{
 });
 
 //EDIT
+//Expenses
+app.get('/expenses/:id/edit', (req,res)=>{
+    Expense.findById(req.params.id, (err,foundExpense)=>{
+        res.render('edit.ejs',{
+            expense:foundExpense
+        });
+    });
+});
+//Savings
+app.get('/savings/:id/edit', (req,res)=>{
+    Savings.findById(req.params.id, (err,foundSavings)=>{
+        res.render('savings_edit.ejs',{
+            saving:foundSavings
+        });
+    });
+});
+
+//Earnings
+app.get('/earnings/:id/edit', (req,res)=>{
+    Earnings.findById(req.params.id, (err,foundEarnings)=>{
+        res.render('earning_edit.ejs', {
+            earning:foundEarnings
+        });
+    });
+});
 
 //Show
 //Expense

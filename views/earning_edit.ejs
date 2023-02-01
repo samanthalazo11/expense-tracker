@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Earning</title>
+</head>
+<body>
+    <h1>Edit Earnings</h1>
+    <form action="/earnings/<%=earning._id%>?_method=PUT" method="POST">
+        Month: <input type="text" name="month" value="<%=earning.month%>">
+        Earnings: <input type="text" name="earnings" value="<%=earning.earnings%>">
+        <input type="submit" value="Update Earnings">
+    </form>
+
+</body>
+</html>
