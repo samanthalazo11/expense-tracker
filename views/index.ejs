@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense List</title>
+</head>
+<body>
+    <nav>
+        <a href="/expenses/new">Add Expense</a>
+    </nav>
+    <h1> Expenses </h1>
+
+    <ul>
+        <% expense.forEach(expense => { %>
+            <li>
+                <a href="/expenses/<%=expense._id%>">
+                    <%=expense.name%>
+                </a>
+            </li>
+
+       <% }) %>
+    </ul>
+    <nav>
+        <a href="/planner">Back to Planner</a>
+    </nav>
+
+<style>
+    body{
+        background-color: lightgrey;
+        text-align: center;
+    }
+    ul li{
+            list-style: none;
+
+                }
+</style>
+
+</body>
+</html>
