@@ -46,6 +46,16 @@ app.use(session({
 //     next();
 // });
 
+app.use((req,res, next)=>{
+    if(req.session.userId){
+        res.locals.user = req.session.userId
+        res.locals.userName = req.session.userName
+    } else {
+        res.locals.user =null
+    }
+    next();
+});
+
 //Authentication Middleware
 
 function isAuthenticated(req,res, next){
@@ -64,7 +74,7 @@ function isAuthenticated(req,res, next){
 app.get('/', (req,res) =>res.render('home.ejs'));
 
 app.use(usersRouter);
-app.use(isAuthenticated,trackerRouter);
+app.use(trackerRouter);
 
 
 

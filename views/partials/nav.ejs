@@ -1,12 +1,15 @@
+<% console.log(locals)%>
 <nav>
  <ul>
-    <% if(locals.user){ %>
+    <% if(user){ %>
         <li>
             <a href="/logout">Logout</a>
         </li>
         <li>
-            <a href="/planner">Go to my tracker</a>
+           <p><%=userName%></p>
         </li>
+
+
         <% } else { %>
             <li>
                 <a href="/signup">Sign Up</a>
@@ -14,6 +17,10 @@
             <li>
                 <a href="/login">Login</a>
             </li>
+            <li>
+                <a href="/planner">Go to my Planner</a>
+            </li>
+
 
 
     <%}%>
