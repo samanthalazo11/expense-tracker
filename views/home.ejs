@@ -4,11 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/style.css">
     <title>Welcome to Expense Tracker</title>
 </head>
 <body>
+
+    <p class="sign">
     <%-include('./partials/nav')%>
+    </p>
+    <div class="front-page">
     <h1> My Expense Planner </h1>
+    <p> Welcome to your planner! This is a place for you to start feeling more in control of your finances.
+        Make use of monthly tracking tools, for expenses, savings, and earnings. Allowing you to help budget for
+        special occasions such as vacations or birthdays.
+    </p>
+</div>
+
+<style>
+    body{margin: 0;
+        background-color: rgb(244, 199, 226);
+        text-align: center;
+    }
+    .front-page{
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-60%);
+
+
+    }
+
+    ul li{
+            list-style: none;
+
+    }
+    .entry{
+        float: right;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px;
+    }
+
+</style>
 
 </body>
 </html>

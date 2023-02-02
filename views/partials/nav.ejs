@@ -2,22 +2,22 @@
 <nav>
  <ul>
     <% if(user){ %>
-        <li>
+        <li class="end">
             <a href="/logout">Logout</a>
         </li>
-        <li>
+        <li class="greeting">
            <p><%=userName%></p>
         </li>
 
 
         <% } else { %>
-            <li>
+            <li class="entry">
                 <a href="/signup">Sign Up</a>
             </li>
-            <li>
+            <li class="entry">
                 <a href="/login">Login</a>
             </li>
-            <li>
+            <li class="entry">
                 <a href="/planner">Go to my Planner</a>
             </li>
 

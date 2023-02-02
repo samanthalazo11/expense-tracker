@@ -10,9 +10,7 @@
 <body>
     <%-include('./partials/nav')%>
     <h1>Sign Up </h1>
-    <% if(error){%>
-        <p style="color:red"><%=error %></p>
-    <%}%>
+
     <form action="/signup" method="POST">
         <label>
             Name:
