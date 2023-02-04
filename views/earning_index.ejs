@@ -11,8 +11,9 @@
 
     <nav>
         <%-include('./partials/nav')%>
-        <a href="/earnings/new">Next Month</a>
+
     </nav>
+    <div class="earning-index">
     <h1>Monthly Earnings </h1>
     <% let total=0 %>
     <ul>
@@ -28,8 +29,10 @@
     </ul>
     <p>Total: <%=total%> </p>
     <nav>
+        <a href="/earnings/new">Next Month</a>
         <a href="/planner">Back to Planner</a>
     </nav>
+</div>
 
 </body>
 </html>

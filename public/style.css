@@ -1,7 +1,10 @@
 body{margin: 0;
     background-color: rgb(203, 184, 195);
-    text-align: center;
+
 }
+
+
+
 .front-page, .second-page {
     font-size: 20px;
     margin: 0;
@@ -35,12 +38,13 @@ ul li{
     padding: 14px;
 }
 .greeting{
-    float: left;
+    float: center;
     display: block;
     color: black;
     padding: 14px;
    font-weight: bold;
    font-size: 20px;
+   font-family:'Trebuchet MS';
 
 }
 .intro{
@@ -91,4 +95,22 @@ ul li{
 }
 .enter{
     padding: 10px;
+}
+
+.expense-index, .savings-index, .earning-index {
+    display: block;
+    font-family:'Trebuchet MS';
+    font-size: 1rem;
+    margin: 10px;
+    width: auto;
+   height: auto;
+    background-color: rgb(168, 139, 156);
+    min-width: 180px;
+    padding: 20px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: rgb(81, 50, 69);
+    text-align: center;
+
+
 }

@@ -8,10 +8,10 @@
     <title>Expense Details</title>
 </head>
 <body>
-
+<div class="expense-show">
     <nav>
         <%-include('./partials/nav')%>
-        <a href="/expenses">Back to All Expenses</a>
+
     </nav>
     <h1> <%=expense.name%> </h1>
     <p>Budget: <%=expense.budget%></p>
@@ -21,6 +21,9 @@
         <input type="submit" value="DELETE">
     </form>
     <a href="/expenses/<%=expense._id%>/edit">Edit</a>
+</br>
 
+    <a href="/expenses">Back to All Expenses</a>
+</div>
 </body>
 </html>
