@@ -8,25 +8,29 @@
     <title>Login</title>
 </head>
 <body>
-    <div class="containter" ></div>
+
     <%-include('./partials/nav')%>
-    <h1>
-        Login Here
-    </h1>
+    <div class="login-page">
+    <h1>Login Here </h1>
     <% if(error){%>
         <p style="color:red"><%=error %></p>
     <%}%>
+    <div class="information">
     <form action="/login" method="POST" autocomplete="off">
         <label>
             Email:
             <input type="email" name="email" required>
         </label>
+    </div>
+    <div class="information">
         <label>
             Password:
             <input type="password" name="password" required>
         </label>
+    </div>
         <input type="submit" value="Login">
     </form>
+</div>
 
 </body>
 </html>

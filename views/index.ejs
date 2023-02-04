@@ -8,15 +8,19 @@
     <title>Expense List</title>
 </head>
 <body>
-
     <nav>
         <%-include('./partials/nav')%>
-        <a href="/expenses/new">Add Expense</a>
-    </nav>
-    <h1> Expenses </h1>
 
+    </nav>
+
+<div class="intro"></div>
+
+    <h1> Expenses </h1>
+    <% let total = 0 %>
     <ul>
         <% expense.forEach(expense => { %>
+            <% total+=parseInt(expense.spent)%>
+
             <li>
                 <a href="/expenses/<%=expense._id%>">
                     <%=expense.name%>
@@ -25,7 +29,10 @@
 
        <% }) %>
     </ul>
+    <p>Total Spent: <%=total%> </p>
+
     <nav>
+        <a href="/expenses/new">Add Expense</a>
         <a href="/planner">Back to Planner</a>
     </nav>
 
