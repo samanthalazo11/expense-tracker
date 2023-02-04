@@ -10,6 +10,7 @@ const usersRouter = require('./controllers/users');
 
 // Initialize application
 const app = express();
+app.use(express.static('public'));
 
 // Configure Settings
 require('dotenv').config()
