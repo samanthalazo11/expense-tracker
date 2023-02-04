@@ -48,6 +48,7 @@ nav{
    font-weight: bold;
    font-size: 20px;
    font-family:'Trebuchet MS';
+   text-transform: uppercase;
 
 }
 .intro{
@@ -130,5 +131,45 @@ nav{
     color: rgb(81, 50, 69);
     text-align: center;
 
+
+}
+
+.expense-show, .savings-show{
+    display: block;
+    font-family:'Trebuchet MS';
+    font-size: 1rem;
+    margin: 10px;
+    width: auto;
+   height: auto;
+    background-color: rgb(168, 139, 156);
+    min-width: 180px;
+    padding: 20px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: rgb(81, 50, 69);
+    text-align: center;
+
+}
+.earning-show{
+    display: block;
+    font-family:'Trebuchet MS';
+    font-size: 1rem;
+    margin: 10px;
+    width: auto;
+   height: auto;
+    background-color: rgb(168, 139, 156);
+    min-width: 180px;
+    padding: 20px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: rgb(81, 50, 69);
+    text-align: center;
+
+}
+.earning-show label , .savings-show label, .expense-show label{
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 10px 0;
 
 }

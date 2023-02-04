@@ -8,22 +8,28 @@
     <title>Expense Details</title>
 </head>
 <body>
-<div class="expense-show">
+
     <nav>
         <%-include('./partials/nav')%>
-
     </nav>
+    <div class="expense-show">
     <h1> <%=expense.name%> </h1>
     <p>Budget: <%=expense.budget%></p>
     <p>Spent: <%=expense.spent%></p>
     <p>Notes: <%=expense.notes%></p>
-    <form action="/expenses/<%=expense._id%>?_method=DELETE" method="POST">
-        <input type="submit" value="DELETE">
-    </form>
+    <label>
     <a href="/expenses/<%=expense._id%>/edit">Edit</a>
-</br>
+    </label>
 
+    <form action="/expenses/<%=expense._id%>?_method=DELETE" method="POST">
+        <label>
+        <input type="submit" value="DELETE">
+    </label>
+    </form>
+    <label>
     <a href="/expenses">Back to All Expenses</a>
+    </label>
+
 </div>
 </body>
 </html>

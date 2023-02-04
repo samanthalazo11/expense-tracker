@@ -11,15 +11,24 @@
 
     <nav>
         <%-include('./partials/nav')%>
-        <a href="/savings">Back to All Savings</a>
+
     </nav>
+    <div class="savings-show">
     <h1> <%=saving.month%> </h1>
     <p>Amount:<%=saving.savings%></p>
     <p>Notes: <%=saving.notes%></p>
-    <form action="/savings/<%=saving._id%>?_method=DELETE" method="POST">
-        <input type="submit" value="DELETE">
-    </form>
+    <label>
     <a href="/savings/<%=saving._id%>/edit">Edit</a>
+    </label>
+    <form action="/savings/<%=saving._id%>?_method=DELETE" method="POST">
+        <label>
+        <input type="submit" value="DELETE">
+    </label>
+    </form>
+    <label>
+    <a href="/savings">Back to All Savings</a>
+</label>
+</div>
 
 
 </body>
