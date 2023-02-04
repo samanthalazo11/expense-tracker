@@ -29,6 +29,9 @@ ul li{
     text-align: center;
     padding: 14px;
 }
+nav{
+    overflow: hidden;
+}
 .end
 {
     float: right;
@@ -74,6 +77,7 @@ ul li{
         border-radius: 10px;
     }
 .login-page h1, .signup-page h1{
+    text-align: center;
    border-bottom: 2px solid rgb(203, 184, 195);
    padding-bottom: 15px;
    color: rgb(150, 91, 127);
@@ -86,11 +90,25 @@ ul li{
 }
 
 
-.signup-info input{
+.signup-info input, .information input{
     width: 50%;
     padding: 0px 10px;
     height: 25px;
     font-size: 16px;
+
+
+}
+.signup-info label{
+   width: 100%;
+   display: block;
+   text-align: center;
+
+}
+.information label{
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 10px 0;
 
 }
 .enter{
