@@ -225,3 +225,32 @@ nav{
     display: inline-block;
     float: right;
 }
+
+.earning-edit,.expense-edit, .savings-edit{display: block;
+    font-family:'Trebuchet MS';
+    font-size: 1rem;
+    margin: 10px;
+    width: auto;
+   height: 220px;
+    background-color: rgb(153, 107, 134);
+    min-width: 180px;
+    padding: 20px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: rgb(81, 50, 69);
+    text-align: center;
+
+}
+.earning-edit label, .expense-edit label, .savings-edit label{
+    display: inline-block;
+   float: center;
+   clear: left;
+   width: 250px;
+   text-align: left;
+
+}
+.edit{
+    margin: 4px;
+    display: inline-block;
+    float: right;
+}

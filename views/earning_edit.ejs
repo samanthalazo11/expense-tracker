@@ -9,13 +9,22 @@
 </head>
 <body>
     <%-include('./partials/nav')%>
+    <div class="earning-edit">
     <h1>Edit Earnings</h1>
     <form action="/earnings/<%=earning._id%>?_method=PUT" method="POST">
-        Month: <input type="text" name="month" value="<%=earning.month%>">
-        Earnings: <input type="text" name="earnings" value="<%=earning.earnings%>">
-        Notes: <input type="text" name="notes" value="<%=earning.notes%>">
-        <input type="submit" value="Update Earnings">
+        <label>
+        Month: <input class="edit" type="text" name="month" value="<%=earning.month%>">
+    </label>
+    <label>
+        Earnings: <input class="edit" type="text" name="earnings" value="<%=earning.earnings%>">
+    </label>
+    <label>
+        Notes: <input class="edit" type="text" name="notes" value="<%=earning.notes%>">
+    </label>
+</br>
+        <input class="edit" type="submit" value="Update Earnings">
     </form>
+</div>
 
 </body>
 </html>

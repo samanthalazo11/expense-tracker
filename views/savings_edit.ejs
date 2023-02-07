@@ -11,14 +11,22 @@
     <nav>
         <%-include('./partials/nav')%>
     </nav>
-
+<div class="savings-edit">
     <h1>Edit Savings</h1>
     <form action="/savings/<%=saving._id%>?_method=PUT" method="POST">
-        Month: <input type="text" name="month" value="<%=saving.month%>">
-        Savings: <input type="text" name="savings" value="<%=saving.savings%>">
-        Notes: <input type="text" name="notes" value="<%=saving.notes%>">
-        <input type="submit" value="Update Savings">
+    <label>
+        Month: <input class='edit' type="text" name="month" value="<%=saving.month%>">
+    </label>
+    <label>
+        Savings: <input class='edit' type="text" name="savings" value="<%=saving.savings%>">
+    </label>
+    <label>
+        Notes: <input class='edit' type="text" name="notes" value="<%=saving.notes%>">
+    </label>
+</br>
+        <input class='edit' type="submit" value="Update Savings">
     </form>
+</div>
 
 
 </body>

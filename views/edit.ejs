@@ -11,15 +11,25 @@
     <nav>
         <%-include('./partials/nav')%>
     </nav>
-
+<div class="expense-edit">
     <h1>Edit Expense</h1>
     <form action="/expenses/<%=expense._id%>?_method=PUT" method="POST">
-        Name: <input type="text" name="name" value="<%=expense.name%>">
-        Budget: <input type="text" name="budget" value="<%=expense.budget%>">
-        Spent: <input type="text" name="spent" value="<%=expense.spent%>">
-        Notes: <input type="text" name="notes" value="<%=expense.notes%>">
-        <input type="submit" value="Update Expense">
+        <label>
+         Name: <input class='edit' type="text" name="name" value="<%=expense.name%>">
+        </label>
+        <label>
+          Budget: <input  class='edit' type="text" name="budget" value="<%=expense.budget%>">
+        </label>
+        <label>
+          Spent: <input class='edit' type="text" name="spent" value="<%=expense.spent%>">
+        </label>
+        <label>
+          Notes: <input class='edit' type="text" name="notes" value="<%=expense.notes%>">
+        </label>
+        </br>
+        <input class='edit' type="submit" value="Update Expense">
     </form>
+</div>
 
 </body>
 </html>
