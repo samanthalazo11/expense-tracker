@@ -3,6 +3,7 @@
 This is a place for you to start feeling more in control of your finances. Make use of monthly tracking tools, for expenses, savings, and earnings. Allowing you to help budget for special occasions such as vacations or birthdays.
 
 # Technologies Used 
+<li>
 HTML 
 CSS 
 JavaScript 
@@ -10,6 +11,7 @@ EJS
 Node.JS
 Express
 MongoDB 
+</li>
 
 # ScreenShots 
 <img width="1280" alt="Screen Shot 2023-02-07 at 2 31 56 PM" src="https://user-images.githubusercontent.com/97905547/217346689-1f51b46e-dcba-43fe-ab30-4999e719366b.png">
