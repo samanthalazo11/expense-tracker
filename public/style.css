@@ -173,3 +173,55 @@ nav{
     margin: 10px 0;
 
 }
+ .earning-show label, .savings-show label, .expense-show label{
+    background-color:  rgb(150, 91, 127);
+    border: none;
+    width: 50%;
+    color: white;
+    border-radius: 8px;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+ }
+ .earning-show label:hover, .savings-show label:hover, .expense-show label:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+ }
+ .delete{
+    background-color:  rgb(150, 91, 127);
+    border: none;
+    text-decoration: underline;
+    color:rgb(44, 44, 139);
+ }
+
+ .earning-new, .saving-new, .expense-new{
+    display: block;
+    font-family:'Trebuchet MS';
+    font-size: 1rem;
+    margin: 10px;
+    width: auto;
+   height: 220px;
+    background-color: rgb(153, 107, 134);
+    min-width: 180px;
+    padding: 20px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: rgb(81, 50, 69);
+    text-align: center;
+
+}
+
+.earning-new label, .saving-new label, .expense-new label{
+   display: inline-block;
+   float: center;
+   clear: left;
+   width: 250px;
+   text-align: left;
+
+}
+.new{
+    margin: 4px;
+    display: inline-block;
+    float: right;
+}

@@ -15,9 +15,11 @@
     </nav>
     <div class="savings-index">
     <h1> Savings </h1>
+    <% let total=0 %>
 
     <ul>
         <% saving.forEach(saving => { %>
+            <% total+=parseInt(saving.savings)%>
             <li>
                 <a href="/savings/<%=saving._id%>">
                     <%=saving.month%>
@@ -26,6 +28,7 @@
 
        <% }) %>
     </ul>
+    <p>Total: <%=total%> </p>
     <nav>
         <a href="/savings/new">Add Savings</a>
         <a href="/planner">Back to Planner</a>

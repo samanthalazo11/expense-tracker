@@ -11,19 +11,27 @@
     <nav>
         <%-include('./partials/nav')%>
     </nav>
-
+<div class="expense-new">
     <h1>Create New Expense</h1>
     <form action="/expenses" method="post">
-
-    Name: <input type="text" name="name">
+<label>
+    Name: <input class ='new' type="text" name="name">
+</label>
 </br>
-    Budget: <input type="text" name="budget">
+<label>
+    Budget: <input class ='new' type="text" name="budget">
+</label>
 </br>
-    Spent: <input type="text" name="spent">
+<label>
+    Spent: <input  class ='new' type="text" name="spent">
+</label>
 </br>
-    Notes: <input type="text" name="notes">
+<label>
+    Notes: <input  class ='new' type="text" name="notes">
+</label>
 </br>
-    <input type="submit" value="Adds New Expense">
+    <input  class='new' type="submit" value="Adds New Expense">
     </form>
+</div>
 </body>
 </html>

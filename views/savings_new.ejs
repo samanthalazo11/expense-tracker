@@ -11,17 +11,23 @@
     <nav>
         <%-include('./partials/nav')%>
     </nav>
-
+<div class='saving-new'>
     <h1>More Savings</h1>
     <form action="/savings" method="post">
-
-    Month: <input type="text" name="month" placeholder="month">
+<label>
+    Month: <input  class ='new' type="text" name="month">
+</label>
 </br>
-    Savings: <input type="text" name="savings">
+<label>
+    Savings: <input  class ='new' type="text" name="savings">
+</label>
 </br>
-    Notes: <input type="text" name="notes">
+<label>
+    Notes: <input class ='new' type="text" name="notes">
+</label>
 </br>
-    <input type="submit" value="Adds Savings">
+    <input class='new' type="submit" value="Adds Savings">
     </form>
+</div>
 </body>
 </html>
