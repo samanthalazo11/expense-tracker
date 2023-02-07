@@ -34,4 +34,4 @@ MongoDB
 https://expense-plan.herokuapp.com/
 
 # Future Enhancements 
-In the future, I would like to add the ability to have everything organized by date. 
+In the future, I would like to add the ability to have everything organized by date, edit your information such as name when you sign up. I would also add a goal page in the beginning. 
