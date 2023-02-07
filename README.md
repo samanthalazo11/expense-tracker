@@ -5,11 +5,23 @@ This is a place for you to start feeling more in control of your finances. Make 
 # Technologies Used 
 <li>
 HTML 
-CSS 
+  </li>
+<li>  
+CSS
+  </li>
+  <li>
 JavaScript 
-EJS 
+  </li>
+  <li>
+EJS
+  </li>
+  <li>
 Node.JS
+  </li>
+  <li>
 Express
+  </li>
+  <li>
 MongoDB 
 </li>
 
