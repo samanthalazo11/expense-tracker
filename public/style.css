@@ -1,5 +1,11 @@
 body{margin: 0;
     background-color: rgb(203, 184, 195);
+    background-image: url(https://i.pinimg.com/originals/0f/29/60/0f296094860b311a03f680e85581cca7.jpg);
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
 
 }
 
@@ -74,7 +80,7 @@ nav{
         left: 50%;
         transform: translate(-50%,-50%);
         width: 400px;
-        background-color: white;
+        background-color:#FFE9EA;
         border-radius: 10px;
     }
 .login-page h1, .signup-page h1{
@@ -121,15 +127,18 @@ nav{
     font-family:'Trebuchet MS';
     font-size: 1rem;
     margin: 10px;
-    width: auto;
+    margin-top: 160px;
+    margin-left: 112px;
+    width: 1000px;
    height: auto;
-    background-color: rgb(168, 139, 156);
+    background-color:#FFBBC0;
     min-width: 180px;
     padding: 20px 20px;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     color: rgb(81, 50, 69);
     text-align: center;
+    border-radius: 8px;
 
 
 }
@@ -139,15 +148,18 @@ nav{
     font-family:'Trebuchet MS';
     font-size: 1rem;
     margin: 10px;
-    width: auto;
+    margin-top: 100px;
+    margin-left: 112px;
+    width: 1000px;
    height: auto;
-    background-color: rgb(168, 139, 156);
+    background-color:#FD94A7;
     min-width: 180px;
     padding: 20px 20px;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     color: rgb(81, 50, 69);
     text-align: center;
+    border-radius: 8px;
 
 }
 .earning-show{
@@ -155,15 +167,18 @@ nav{
     font-family:'Trebuchet MS';
     font-size: 1rem;
     margin: 10px;
-    width: auto;
+    margin-top: 100px;
+    margin-left: 112px;
+    width: 1000px;
    height: auto;
-    background-color: rgb(168, 139, 156);
+    background-color:#FD94A7;
     min-width: 180px;
     padding: 20px 20px;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     color: rgb(81, 50, 69);
     text-align: center;
+    border-radius: 8px;
 
 }
 .earning-show label , .savings-show label, .expense-show label{
@@ -174,7 +189,7 @@ nav{
 
 }
  .earning-show label, .savings-show label, .expense-show label{
-    background-color:  rgb(150, 91, 127);
+    background-color:#FFE9EA;
     border: none;
     width: 50%;
     color: white;
@@ -189,7 +204,7 @@ nav{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
  }
  .delete{
-    background-color:  rgb(150, 91, 127);
+    background-color:  #FFE9EA;
     border: none;
     text-decoration: underline;
     color:rgb(44, 44, 139);
@@ -200,15 +215,18 @@ nav{
     font-family:'Trebuchet MS';
     font-size: 1rem;
     margin: 10px;
-    width: auto;
-   height: 220px;
-    background-color: rgb(153, 107, 134);
+    margin-top: 100px;
+    margin-left: 112px;
+    width: 1000px;
+   height: 250px;
+    background-color:#FD94A7;
     min-width: 180px;
     padding: 20px 20px;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     color: rgb(81, 50, 69);
     text-align: center;
+    border-radius: 8px;
 
 }
 
@@ -226,19 +244,22 @@ nav{
     float: right;
 }
 
-.earning-edit,.expense-edit, .savings-edit{display: block;
+.earning-edit,.expense-edit, .savings-edit{
+    display: block;
     font-family:'Trebuchet MS';
     font-size: 1rem;
-    margin: 10px;
-    width: auto;
+    margin-top: 100px;
+    margin-left: 112px;
+    width: 1000px;
    height: 220px;
-    background-color: rgb(153, 107, 134);
+    background-color:#FD94A7;
     min-width: 180px;
     padding: 20px 20px;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     color: rgb(81, 50, 69);
     text-align: center;
+    border-radius: 8px;
 
 }
 .earning-edit label, .expense-edit label, .savings-edit label{
@@ -253,4 +274,9 @@ nav{
     margin: 4px;
     display: inline-block;
     float: right;
+}
+
+.total{
+   color: rgb(81, 50, 69);
+   font-weight: bold;
 }

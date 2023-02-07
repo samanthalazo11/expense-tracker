@@ -15,7 +15,7 @@
     </nav>
     <div class="earning-index">
     <h1>Monthly Earnings </h1>
-    <% let total=0 %>
+    <% let total = 0 %>
     <ul>
         <% earning.forEach(earning => { %>
             <% total+=parseInt(earning.earnings)%>
@@ -27,7 +27,7 @@
 
        <% }) %>
     </ul>
-    <p>Total: <%=total%> </p>
+    <p class="total">Total: <%=total%> </p>
     <nav>
         <a href="/earnings/new">Add Earnings</a>
         <a href="/planner">Back to Planner</a>
