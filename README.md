@@ -1,4 +1,4 @@
-# expense-tracker
+# Expense-Planner
 # Description 
 This is a place for you to start feeling more in control of your finances. Make use of monthly tracking tools, for expenses, savings, and earnings. Allowing you to help budget for special occasions such as vacations or birthdays.
 
