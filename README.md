@@ -31,7 +31,7 @@ MongoDB
 <img width="1280" alt="Screen Shot 2023-02-07 at 2 31 21 PM" src="https://user-images.githubusercontent.com/97905547/217346717-6dd2dc45-1fb5-452b-a740-b27389066434.png">
 
 # Getting Started 
-https://expense-plan.herokuapp.com/
+Deployed app: https://expense-plan.herokuapp.com/ 
 
 # Future Enhancements 
 In the future, I would like to add the ability to have everything organized by date, edit your information such as name when you sign up. I would also add a goal page in the beginning. 
